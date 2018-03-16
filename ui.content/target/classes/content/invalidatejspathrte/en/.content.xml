@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/apps/invalidatejspathrte/templates/page]"
+        cq:designPath="/etc/designs/invalidatejspathrte"
+        cq:lastModified="{Date}2018-03-16T12:36:06.322-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/invalidatejspathrte/templates/homepage"
+        jcr:lastModified="{Date}2014-05-27T10:22:52.400+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="English"
+        sling:resourceType="invalidatejspathrte/components/page/page-home">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            
+            
+            
+            
+            <text
+                jcr:created="{Date}2014-05-19T14:06:27.681+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-06-16T12:11:13.634+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p>&#xa;"
+                textIsRich="true">
+                <cq:annotations jcr:primaryType="nt:unstructured"/>
+            </text>
+            <colctrl
+                jcr:created="{Date}2014-06-16T12:15:44.094+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-06-16T12:15:44.094+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys/colctrl"
+                layout="2;cq-colctrl-lt0"/>
+            <image
+                jcr:created="{Date}2018-03-15T18:14:05.580-04:00"
+                jcr:createdBy="admin"
+                jcr:description="Image with non-aem relative link"
+                jcr:lastModified="{Date}2018-03-16T12:36:06.318-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image with non-aem relative link"
+                sling:resourceType="invalidatejspathrte/components/content/image"
+                alt="SDFSDF"
+                fileReference="/content/dam/geometrixx-outdoors/activities/snowboarding/PDP_1_c05.jpg"
+                height="0"
+                linkURL="http://www.google.com"
+                width="0"/>
+            <col_break14029137700350
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys/colctrl"
+                controlType="break"/>
+            <text_1753747556
+                jcr:created="{Date}2018-03-15T18:14:09.930-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-03-16T12:21:07.695-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="invalidatejspathrte/components/content/text"
+                rteText="&lt;p>&lt;a href=&quot;/aaddd&quot;>dfsdfdafdsf&lt;/a>&amp;nbsp; fsadfasdfasdfasdf&lt;/p>&#xd;&#xa;&lt;p>adsfsdfsadfsdaf&lt;/p>&#xd;&#xa;&lt;p>asdfsdaf&lt;/p>&#xd;&#xa;"
+                text="&lt;p>Text with different links&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/relativelink&quot; target=&quot;_blank&quot;>Relative link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/geometrixx/en/products&quot;>Internal LInk&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;http://www.google.com&quot; target=&quot;_parent&quot;>External Link&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <col_end14029137700351
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys/colctrl"
+                controlType="end"/>
+            <image_1
+                jcr:created="{Date}2014-05-26T17:52:39.201+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-06-16T17:58:21.537+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileName="banner.png">
+                <file/>
+            </image_1>
+        </par>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>
