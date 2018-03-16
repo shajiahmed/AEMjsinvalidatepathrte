@@ -1,6 +1,6 @@
-# Sample AEM project template
+# JS Invalidate Path and RTE
 
-In AEM 6.1 & 6.2 RTE, link plugin path always starts with /content. As soon as author starts typing / it automatically suffixed with content.
+In AEM 6.1 & 6.2 RTE, link plugin and path always starts with /content. As soon as author starts typing / it automatically suffixed with content.
 
 Some environments have requirement to have both aem and non-aem links on the same domain. 
 
