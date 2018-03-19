@@ -120,11 +120,11 @@
                     <failOnError>true</failOnError>
                     <group>InvalidateJsPathRTE Content Package</group>
                     <embeddeds>
-                        <embedded>
+                        <!-- <embedded>
                             <groupId>com.js.invalidate.path.rte</groupId>
                             <artifactId>jsinvalidatepathrte.core</artifactId>
                             <target>/apps/invalidatejspathrte/install</target>
-                        </embedded>
+                        </embedded> -->
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -195,16 +195,8 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
-        <dependency>
-            <groupId>com.js.invalidate.path.rte</groupId>
-            <artifactId>jsinvalidatepathrte.core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-api</artifactId>
-        </dependency>
+       
+       
 
     </dependencies>
 </project>

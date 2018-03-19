@@ -4,7 +4,7 @@
 <comment>InvalidateJsPathRTE - UI apps</comment>
 <entry key="createdBy">mohammed_ahmed</entry>
 <entry key="name">jsinvalidatepathrte.ui.apps</entry>
-<entry key="created">2018-03-16T12:41:51.501-0400</entry>
+<entry key="created">2018-03-19T14:14:49.624-0400</entry>
 <entry key="groupId">com.js.invalidate.path.rte</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
