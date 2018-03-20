@@ -4,15 +4,7 @@
 	var _ = window._, Class = window.Class, CUI = window.CUI, RTE_LINK_DIALOG = "rtelinkdialog";
     // Remove validation class from the pathbrowser
 	 $(".js-coral-pathbrowser-input").removeClass("js-coral-pathbrowser-input");
-	$(document).on("foundation-contentloaded", function(e) {
-		 
-		  $(".js-coral-pathbrowser-input").removeClass("js-coral-pathbrowser-input");
-		});
 	
-	$(document).on("dialog-ready", function(e) {
-		 
-		  $(".js-coral-pathbrowser-input").removeClass("js-coral-pathbrowser-input");
-		});
 	if (CUI.rte.ui.cui.CuiDialogHelper.rteLinkExtended) {
 		return;
 	}
