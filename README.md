@@ -4,9 +4,8 @@ In AEM 6.1 & 6.2 RTE, link plugin and path always starts with /content. As soon 
 
 Some environments have requirement to have both aem and non-aem links on the same domain. 
 
-There is a class js-coral-pathbrowser-input which does validation on rte and path browsers. If this class is removed when dialog is loaded, authors can enter
-
-relative urls in path browser and rte link dialog.
+There is a class js-coral-pathbrowser-input which does validation on rte and path browsers. If this class is removed when dialog is loaded, 
+authors can enter relative urls in path browser and rte link dialog.
 
 ## Modules
 
