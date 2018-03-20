@@ -9,10 +9,11 @@ authors can enter relative urls in path browser and rte link dialog.
 
 ## Modules
 
-The main parts of the template are:
+The main parts of the project are:
 
-* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
+* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, text and image components, and sample templates 
 * ui.content: contains sample content using the components from the ui.apps
+* package: contains aem package for above two modules
 
 ## How to build
 
