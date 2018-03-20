@@ -4,7 +4,7 @@
     <jcr:content
         cq:allowedTemplates="[/apps/invalidatejspathrte/templates/page]"
         cq:designPath="/etc/designs/invalidatejspathrte"
-        cq:lastModified="{Date}2018-03-16T12:36:06.322-04:00"
+        cq:lastModified="{Date}2018-03-20T16:10:48.701-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/invalidatejspathrte/templates/homepage"
         jcr:lastModified="{Date}2014-05-27T10:22:52.400+02:00"
@@ -15,18 +15,14 @@
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
-            
-            
-            
-            
             <text
                 jcr:created="{Date}2014-05-19T14:06:27.681+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2014-06-16T12:11:13.634+02:00"
+                jcr:lastModified="{Date}2018-03-20T16:10:48.698-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/text"
-                text="&lt;p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p>&#xa;"
+                text="&lt;p>RTE and path browser links in OOTB have some validation on fields with js-coral-pathbrowser-input class, It forces valid AEM path or external links only. Any non-aem link cannot be added in 6.1 and 6.2, &amp;nbsp;As soon as author types&amp;nbsp;&lt;b>/&lt;/b>&amp;nbsp;it automatically suffixed with&amp;nbsp;&lt;b>content&lt;/b>&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;Path Browser has this validation coming from class &lt;b>js-coral-pathbrowser-input&lt;/b>&lt;br>&#xd;&#xa;&amp;nbsp;in clientlib /etc/clientlibs/granite/coralui2/optional/rte/js/components/cui-rte.templates.js. RTE has same class coming from&amp;nbsp;/libs/cq/ui/widgets/source/widgets/form/rte/plugins/LinkDialog.js&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;p>These&amp;nbsp; are out of box files cannot be modified,&amp;nbsp;&amp;nbsp;I created a custom extension which removes this class when dialog is loaded. This just removes the validation, there are other configurations that need to be done on rte side in order for non-aem internal links to be added.&amp;nbsp;&lt;br>&#xd;&#xa;AEM automatically appends .html for any links that don't start with http, In order for non-aem to not append .html rte needs to have htmlRules which has few configuration properties as defined in&amp;nbsp;&lt;a href=&quot;https://docs.adobe.com/docs/en/aem/6-1/administer/operations/page-authoring/rich-text-editor.html&quot;>https://docs.adobe.com/docs/en/aem/6-1/administer/operations/page-authoring/rich-text-editor.html&lt;/a>&lt;br>&#xd;&#xa;I added this as a node to current rte in Text Component, this node needs to have links subnode with property ensureInternalLinkExt set to false to avoid appending .html to non-aem or external links.&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>For pathbrowser links, I extended ootb image component to stop appending .html to external links or any non-aem path starting with /.&amp;nbsp;&amp;nbsp;&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
                 textIsRich="true">
                 <cq:annotations jcr:primaryType="nt:unstructured"/>
             </text>
@@ -42,15 +38,15 @@
                 jcr:created="{Date}2018-03-15T18:14:05.580-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Image with non-aem relative link"
-                jcr:lastModified="{Date}2018-03-16T12:36:06.318-04:00"
+                jcr:lastModified="{Date}2018-03-20T15:44:28.326-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Image with non-aem relative link"
                 sling:resourceType="invalidatejspathrte/components/content/image"
-                alt="SDFSDF"
+                alt="Snow boarding"
                 fileReference="/content/dam/geometrixx-outdoors/activities/snowboarding/PDP_1_c05.jpg"
                 height="0"
-                linkURL="http://www.google.com"
+                linkURL="/nonaemlink"
                 width="0"/>
             <col_break14029137700350
                 jcr:primaryType="nt:unstructured"
@@ -59,27 +55,19 @@
             <text_1753747556
                 jcr:created="{Date}2018-03-15T18:14:09.930-04:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-03-16T12:21:07.695-04:00"
+                jcr:lastModified="{Date}2018-03-20T15:47:44.653-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="invalidatejspathrte/components/content/text"
                 rteText="&lt;p>&lt;a href=&quot;/aaddd&quot;>dfsdfdafdsf&lt;/a>&amp;nbsp; fsadfasdfasdfasdf&lt;/p>&#xd;&#xa;&lt;p>adsfsdfsadfsdaf&lt;/p>&#xd;&#xa;&lt;p>asdfsdaf&lt;/p>&#xd;&#xa;"
-                text="&lt;p>Text with different links&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/relativelink&quot; target=&quot;_blank&quot;>Relative link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/geometrixx/en/products&quot;>Internal LInk&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;http://www.google.com&quot; target=&quot;_parent&quot;>External Link&lt;/a>&lt;/p>&#xd;&#xa;"
+                text="&lt;p>Text with different links&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/relativelink&quot; target=&quot;_blank&quot;>Relative non aem link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/invalidatejspathrte/en&quot;>Internal LInk from path browser&amp;nbsp;&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://github.com/shajiahmed/AEMjsinvalidatepathrte&quot; target=&quot;_parent&quot;>External Link&lt;/a>&lt;/p>&#xd;&#xa;"
                 textIsRich="true"/>
             <col_end14029137700351
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys/colctrl"
                 controlType="end"/>
-            <image_1
-                jcr:created="{Date}2014-05-26T17:52:39.201+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2014-06-16T17:58:21.537+02:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/image"
-                fileName="banner.png">
-                <file/>
-            </image_1>
+            
+            
         </par>
         <image jcr:primaryType="nt:unstructured">
             <file/>
