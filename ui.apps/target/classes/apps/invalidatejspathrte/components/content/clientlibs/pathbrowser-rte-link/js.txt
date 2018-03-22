@@ -1,2 +1,0 @@
-#base=js
-link-options.js
