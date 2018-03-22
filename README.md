@@ -1,6 +1,6 @@
 # JS Invalidate Path and RTE
 
-In AEM 6.1 & 6.2 RTE, link plugin and path always starts with /content. As soon as author starts typing / it automatically suffixed with content.
+In AEM 6.0, 6.1 & 6.2 RTE  link plugin and path browser appends content automatically, as soon as author starts typing / .
 
 Some environments have requirement to have both aem and non-aem links on the same domain. 
 

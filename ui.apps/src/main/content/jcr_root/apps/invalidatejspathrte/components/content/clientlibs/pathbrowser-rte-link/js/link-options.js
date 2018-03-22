@@ -1,10 +1,13 @@
 (function($, $document) {
 	"use strict";
-
+	$document.on("dialog-ready", function() {
+       $(".js-coral-pathbrowser-input").removeClass("js-coral-pathbrowser-input");
+    });
 	var _ = window._, Class = window.Class, CUI = window.CUI, RTE_LINK_DIALOG = "rtelinkdialog";
     // Remove validation class from the pathbrowser
 	 $(".js-coral-pathbrowser-input").removeClass("js-coral-pathbrowser-input");
-	
+
+
 	if (CUI.rte.ui.cui.CuiDialogHelper.rteLinkExtended) {
 		return;
 	}

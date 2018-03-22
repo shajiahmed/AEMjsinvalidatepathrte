@@ -4,7 +4,7 @@
     <jcr:content
         cq:allowedTemplates="[/apps/invalidatejspathrte/templates/page]"
         cq:designPath="/etc/designs/invalidatejspathrte"
-        cq:lastModified="{Date}2018-03-20T16:10:48.701-04:00"
+        cq:lastModified="{Date}2018-03-22T14:18:41.672-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/invalidatejspathrte/templates/homepage"
         jcr:lastModified="{Date}2014-05-27T10:22:52.400+02:00"
@@ -34,20 +34,27 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys/colctrl"
                 layout="2;cq-colctrl-lt0"/>
-            <image
-                jcr:created="{Date}2018-03-15T18:14:05.580-04:00"
+            <text_1028047065
+                jcr:created="{Date}2018-03-21T17:13:31.094-04:00"
                 jcr:createdBy="admin"
-                jcr:description="Image with non-aem relative link"
-                jcr:lastModified="{Date}2018-03-20T15:44:28.326-04:00"
+                jcr:lastModified="{Date}2018-03-22T13:52:58.633-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Image with non-aem relative link"
-                sling:resourceType="invalidatejspathrte/components/content/image"
-                alt="Snow boarding"
-                fileReference="/content/dam/geometrixx-outdoors/activities/snowboarding/PDP_1_c05.jpg"
-                height="0"
-                linkURL="/nonaemlink"
-                width="0"/>
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>&lt;b>OOTB Issues:&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>OOTB General -&amp;gt; Text&amp;nbsp; Component&lt;/p>&#xd;&#xa;&lt;p>Here you cannot add any Internal Non-aem link issue in ootb text component starting with /somelinkpath&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Below OOTB&amp;nbsp; General -&amp;gt; Image component doesn't allow to have non-aem relative links&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <image_2115561568
+                jcr:created="{Date}2018-03-21T17:30:25.621-04:00"
+                jcr:createdBy="admin"
+                jcr:description="Here you cannot add non-aem link in Link to Path browser. It fills with /content as soon as author starts typing /"
+                jcr:lastModified="{Date}2018-03-22T13:29:40.783-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="OOTB Image component"
+                sling:resourceType="foundation/components/image"
+                alt="Cannot add non-aem link in Link to Path browser"
+                fileReference="/content/dam/invalidatejspathrte/OOTB-Image-issue.png"
+                linkURL="/content/"/>
             <col_break14029137700350
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys/colctrl"
@@ -55,19 +62,32 @@
             <text_1753747556
                 jcr:created="{Date}2018-03-15T18:14:09.930-04:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-03-20T15:47:44.653-04:00"
+                jcr:lastModified="{Date}2018-03-22T13:55:08.600-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="invalidatejspathrte/components/content/text"
                 rteText="&lt;p>&lt;a href=&quot;/aaddd&quot;>dfsdfdafdsf&lt;/a>&amp;nbsp; fsadfasdfasdfasdf&lt;/p>&#xd;&#xa;&lt;p>adsfsdfsadfsdaf&lt;/p>&#xd;&#xa;&lt;p>asdfsdaf&lt;/p>&#xd;&#xa;"
-                text="&lt;p>Text with different links&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/relativelink&quot; target=&quot;_blank&quot;>Relative non aem link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/invalidatejspathrte/en&quot;>Internal LInk from path browser&amp;nbsp;&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://github.com/shajiahmed/AEMjsinvalidatepathrte&quot; target=&quot;_parent&quot;>External Link&lt;/a>&lt;/p>&#xd;&#xa;"
+                text="&lt;p>&lt;b>Modified Components from&amp;nbsp;Pathbrowser rte image Component Group&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>Text Component from&lt;/p>&#xd;&#xa;&lt;p>Pathbrowser rte image -&amp;gt; Custom Text&lt;/p>&#xd;&#xa;&lt;p>Here, you can add&amp;nbsp; &lt;a href=&quot;/non-aem&quot;>non-aem&lt;/a> paths in link dialog&lt;/p>&#xd;&#xa;&lt;p>Text with different links&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/relativelink&quot; target=&quot;_blank&quot;>Relative non aem link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;/content/invalidatejspathrte/en&quot;>Internal LInk from path browser&amp;nbsp;&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://github.com/shajiahmed/AEMjsinvalidatepathrte&quot; target=&quot;_parent&quot;>External Link&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>Modifed&amp;nbsp;Pathbrowser rte image -&amp;gt; Custom Image Component below&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
                 textIsRich="true"/>
+            <image
+                jcr:created="{Date}2018-03-15T18:14:05.580-04:00"
+                jcr:createdBy="admin"
+                jcr:description="Image with non-aem relative link"
+                jcr:lastModified="{Date}2018-03-22T14:18:41.667-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image with non-aem relative link"
+                sling:resourceType="invalidatejspathrte/components/content/image"
+                alt="Snow boarding"
+                fileReference="/content/dam/invalidatejspathrte/fixed-non-aemlink.png"
+                height="0"
+                linkURL="/nonaem"
+                width="0"/>
             <col_end14029137700351
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys/colctrl"
                 controlType="end"/>
-            
-            
+            <image_1/>
         </par>
         <image jcr:primaryType="nt:unstructured">
             <file/>
